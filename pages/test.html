@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Jahandideh | Publications</title>
+    <!-- SEO meta tags -->
+    <meta name="description" content="Discover Mina Jahandideh’s publications in neuroscience, bioinformatics, healthcare, and more. View journal articles, research work, and contributions.">
+    <meta name="keywords" content="Mina Jahandideh, publications, research, neuroscience, bioinformatics, healthcare, scientific articles">
+    <meta name="author" content="Mina Jahandideh">
+
+    <!-- Open Graph for social media sharing -->
+    <meta property="og:title" content="Mina Jahandideh | Publications">
+    <meta property="og:description" content="Discover Mina Jahandideh’s research publications.">
+    <meta property="og:image" content="https://yourdomain.com/images/pub.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/publications.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mina Jahandideh | Publications">
+    <meta name="twitter:description" content="Discover Mina Jahandideh’s research publications.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/pub.png">
+
+    <link rel="canonical" href="https://yourdomain.com/publications.html" />
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.querySelectorAll(".toggle-theme");
+            toggle.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const htmlEl = document.documentElement;
+                    const isDark = htmlEl.classList.contains("dark");
+                    if (isDark) {
+                        htmlEl.classList.remove("dark");
+                        localStorage.theme = "light";
+                    } else {
+                        htmlEl.classList.add("dark");
+                        localStorage.theme = "dark";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body class="flex flex-col bg-teal-400/95 dark:bg-zinc-800" style="min-height:var(--app-height)">
+    <svg class="hidden" aria-hidden="true"> ... <!-- (Your SVG symbols here, unchanged) --> </svg>
+
+    <!-- Header/Nav: Logo is a link -->
+    <header class="right-0 left-0 hidden sm:flex items-center w-full h-20 px-2 md:px-8 mx-auto my-0 bg-[#39749f]/60 backdrop-blur-[6px]" role="banner">
+        <div class="flex items-center justify-between w-full gap-x-2 md:gap-x-6">
+            <div class="flex w-20 rounded-2xl items-center">
+                <a href="index.html" aria-label="Go to homepage">
+                    <img src="../images/logo-2.png" alt="Mina Jahandideh Logo" class="rounded-2xl h-full p-0">
+                </a>
+            </div>
+            <nav class="flex gap-x-2 items-center h-14" aria-label="Main Navigation">
+                <ul class="font-inter list-none flex h-full gap-x-2 lg:gap-x-10 text-sm md:text-base tracking-tighter font-medium text-black dark:text-blue-200 child:leading-[56px]">
+                    <!-- (Links unchanged) -->
+                </ul>
+            </nav>
+            <button class="flex text-sky-50 cursor-pointer toggle-theme" aria-label="Toggle dark mode">
+                <svg class="inline-block dark:hidden w-8 h-8"><use href="#moon"></use></svg>
+                <svg class="dark:inline-block hidden w-8 h-8"><use href="#sun"></use></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile nav & sidebar... (No major SEO changes needed) -->
+
+    <section class="flex flex-col items-center w-full bg-orange-400/95 dark:bg-amber-900 rounded-br-full border-cyan-500/40 border-b-8" aria-label="Publications banner">
+        <img src="../images/pub.png" alt="Journals collage for publications" class="h-40 rounded-tl-[50px] rounded-br-[80px] border-l-8"/>
+    </section>
+
+    <main class="flex-1 flex flex-col items-center justify-center w-full" id="main-content">
+        <article class="w-full flex flex-col p-10 bg-teal-400/95 dark:bg-zinc-800 dark:text-sky-200" itemscope itemtype="https://schema.org/Person">
+            <header>
+                <h1 class="text-2xl font-bold mb-6 text-center w-full" itemprop="name">Mina Jahandideh’s Publications</h1>
+                <meta itemprop="description" content="List of research publications and articles authored by Mina Jahandideh.">
+            </header>
+            <ol class="w-full list-decimal space-y-2 sm:space-y-6 pl-2 sm:pl-6 text-justify" itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
+                <!-- Loop through publications -->
+                <li itemscope itemtype="https://schema.org/ScholarlyArticle">
+                    <article>
+                        <p>
+                            <span class="font-bold" itemprop="author">Jahandideh M</span>, Ebrahimi E, Farzaei MH, Barzegari E. 
+                            <span itemprop="name">The effect of chronic lithium treatment on hippocampal progenitor cells: Transcriptomic analysis and systems pharmacology.</span> 
+                            <span class="italic" itemprop="isPartOf">Brain Behav</span>. 
+                            <span class="font-bold" itemprop="datePublished">2023</span>; e3215. 
+                            <a href="https://doi.org/10.1002/brb3.3215" target="_blank" rel="noopener noreferrer" 
+                                class="font-medium text-blue-800 dark:text-blue-500 hover:text-sky-600 underline visited:text-purple-600"
+                                itemprop="url">View full article (DOI)</a>
+                        </p>
+                    </article>
+                </li>
+                <!-- Repeat for each publication, adding schema.org markup -->
+                <!-- ... -->
+            </ol>
+        </article>
+    </main>
+    <footer class="w-full min-h-[10%] bg-gray-600 flex items-center justify-center text-center text-white">
+        <span>&copy; 2025. All rights reserved. | Designed &amp; coded by Mina Jahandideh</span>
+    </footer>
+    <div class="overlay hidden sm:hidden fixed inset-0 bg-black bg-opacity-50 z-10 h-full"></div>
+    <script src="../scripts/app.js"></script>
+</body>
+</html>
