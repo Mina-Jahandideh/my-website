@@ -27,6 +27,18 @@ html, body {
     display: flex;
     flex-direction: column;
   }
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  ul ul {
+    list-style-type: circle;
+  }
+
+  ul ul ul {
+    list-style-type: square;
+  }
 }
 
 .hiddeh {
